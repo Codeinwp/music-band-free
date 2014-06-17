@@ -1,11 +1,11 @@
-= Music Band Lite =
+= MusicBand =
 Author: Codeinwp
 Tags: purple, pink, gray, white, two-columns, custom-background, custom-header, right-sidebar, responsive-layout, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready
 Requires at least:	3.3.0
 Tested up to:		3.6
-Music Band Lite
+MusicBand
 == Description ==
-Music Band Lite is a easily customizable WordPress Theme with an elegant design for your band.  
+MusicBand is a easily customizable WordPress Theme with an elegant design for your band.  
 = License =
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License v2.
 The exceptions to this license are as follows: 
