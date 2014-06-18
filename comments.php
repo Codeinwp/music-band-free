@@ -13,11 +13,11 @@ if ( post_password_required() )
 	<?php if ( have_comments() ) : ?>
         <div class="comments_headline"><?php comments_number( 'No Comments', 'Comments (1)', 'Comments(%)' ); ?></div>
 			<?php
-				wp_list_comments('callback=cwp_comment');
+				wp_list_comments( 'callback=cwp_comment' );
 			?>
 		<div class="navigation">
 			<?php 
-			  paginate_comments_links( array('prev_text' => 'prev', 'next_text' => 'next')); 
+			  paginate_comments_links( array( 'prev_text' => 'prev', 'next_text' => 'next' )); 
 			?>
 		</div>
 	<?php endif; // have_comments() ?>
@@ -44,6 +44,6 @@ if ( post_password_required() )
         ),
     );
  
-	comment_form($comments_args);
-	?>
+	comment_form( $comments_args );
+?>
 </div><!-- #comments -->
