@@ -40,11 +40,11 @@ function cwp_content_nav( $nav_id ) {
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'cwp' ) ); ?></div>
+		<div class="nav-previous">			<?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'cwp' ) ); ?>		</div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'cwp' ) ); ?></div>
+			<div class="nav-next">				<?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'cwp' ) ); ?>			</div>
 		<?php endif; ?>
 
 	<?php endif; ?>
@@ -53,7 +53,7 @@ function cwp_content_nav( $nav_id ) {
 	<?php
 }
 
-function cwp_comment($comment, $args, $depth) {
+function cwp_comment( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
   
 		if ( 'div' == $args['style'] ) {
@@ -71,7 +71,7 @@ function cwp_comment($comment, $args, $depth) {
 		?>
 		<div class="comment" id="li-comment-<?php comment_ID() ?>">
 			
-				<?php _e( 'Pingback:', 'cwp' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'cwp' ), '<span class="edit-link">', '</span>' ); ?>
+				<?php _e( 'Pingback:', 'cwp' ); ?> <?php comment_author_link(); ?>				<?php edit_comment_link( __( '( Edit )', 'cwp' ), '<span class="edit-link">', '</span>' ); ?>
 			
 		</div>
 		<?php
@@ -82,18 +82,18 @@ function cwp_comment($comment, $args, $depth) {
 		
 		 ?>
 		<div class="comment" id="li-comment-<?php comment_ID() ?>">
-			<div class="avatar"><?php echo get_avatar( $comment); ?></div>
+			<div class="avatar"><?php echo get_avatar( $comment ); ?></div>
 			<div class="comment_content">
 				<?php echo $comment->comment_content; ?><br />
 				<?php $cid = get_comment_ID(); ?>
-				<span><?php _e('WRITTEN BY','cwp'); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )); ?>"><?php comment_author($cid); ?></a>  |  <?php echo get_comment_date('F j, Y'); ?></span>
-				<?php if ($comment->comment_approved == '0') : ?>
-                        <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.','cwp') ?></em>
+				<span><?php _e( 'WRITTEN BY', 'cwp' ); ?> 					<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )); ?>">						<?php comment_author( $cid ); ?></a>  |  <?php echo get_comment_date( 'F j, Y' ); ?></span>
+				<?php if ( $comment->comment_approved == '0' ) : ?>
+                        <em class="comment-awaiting-moderation">							<?php _e( 'Your comment is awaiting moderation.', 'cwp' ) ?>						</em>
                         <br />
                 <?php endif; ?>
 			</div><!--/comment_content-->
 			
-			<div class="reply"><?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => '20'))); ?></div>
+			<div class="reply"><?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => '20' ))); ?></div>
 		</div><!--/comment--> 
 <?php  
 	break;

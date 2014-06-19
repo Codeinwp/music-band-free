@@ -16,7 +16,7 @@
 						endif;		
 					?>
 				</div>
-				<?php  					wp_nav_menu( array( 						'theme_location' => 'footer_menu', 						'depth' => -1, 						'walker' => new cwp_custom_menu_walker, 						'items_wrap' => '<nav class="fnav">%3$s</nav>',					) ); 				?>
+				<?php  					$menu_html = wp_nav_menu( array(						'echo' => false,						'theme_location' => 'footer_menu', 						'depth' => -1, 						'walker' => new cwp_custom_menu_walker, 						'items_wrap' => '<nav class="fnav">%3$s</nav>',					) );										// For some reason the menu outputs many empty menu items					// which breaks the HTML validation.					if ( ! preg_match( '#<a href=[\'\"]+></a>#', $menu_html ) ) {						echo $menu_html;					}				?>
 				<div class="clearfix"></div>
 			</div><!--/footercenter-->
 		</footer>
