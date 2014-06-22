@@ -1,10 +1,10 @@
 /*
 Theme Name: Music Band Lite
-Theme URI: http://themeisle.com/themes/music-band-lite/
-Author: Codeinwp
-Author URI: www.codeinwp.com
+Theme URI: http://themeisle.com/themes/music-band-lite/?utm_source=music-band-lite&utm_medium=link&utm_campaign=theme-css-theme-url
+Author: themeisle
+Author URI: http://themeisle.com/?utm_source=music-band-lite&utm_medium=link&utm_campaign=theme-css-author-url
 Description: Music Band Lite is a easily customizable WordPress Theme with an elegant design for your band.
-Version: 1.1
+Version: 1.0
 License: GNU General Public License v2
 License URI: license.txt
 Text Domain: cwp
@@ -180,7 +180,6 @@ h6 {
 
 header {
 	width: 100%;
-	border-bottom: 1px solid #e2c4c0;
 	margin-bottom: 9px;
 	min-height: 80px;
 }
