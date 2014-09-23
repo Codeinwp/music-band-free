@@ -1,7 +1,7 @@
 <?php
 /*
  * The template for displaying Comments.
- * @package cwp
+ * @package music-band-lite
  * If the current post is protected by a password and
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
@@ -25,7 +25,7 @@ if ( post_password_required() )
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'cwp' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'music-band-lite' ); ?></p>
 	<?php endif; ?>
 	<?php
 	$comments_args = array(
@@ -38,9 +38,9 @@ if ( post_password_required() )
             'comment_field' => '<textarea id="comment" name="comment"></textarea>',
         
             'fields' => array(
-            'author' => '<div class="fields"><p>' . '<label for="author"><span>' . __( 'Name*', 'cwp' ) . '</span><input class="field" id="author" name="author" type="text" value="" /> ' . '</p>'. '</label> ',
-            'email' => '<p>'.'<label for="email"><span>' . __( 'Email*', 'cwp' ) . '</span><input class="field" id="email" name="email" type="text" value="" />' . '</p>'.'</label> ',
-            'url' => '<p>'.'<label for="url"><span>' . __( 'URL', 'cwp' ) . '</span><input class="field" id="url" name="url" type="text" value="" />'. '</p>'. '</label>'. '</div>',
+            'author' => '<div class="fields"><p>' . '<label for="author"><span>' . __( 'Name*', 'music-band-lite' ) . '</span><input class="field" id="author" name="author" type="text" value="" /> ' . '</p>'. '</label> ',
+            'email' => '<p>'.'<label for="email"><span>' . __( 'Email*', 'music-band-lite' ) . '</span><input class="field" id="email" name="email" type="text" value="" />' . '</p>'.'</label> ',
+            'url' => '<p>'.'<label for="url"><span>' . __( 'URL', 'music-band-lite' ) . '</span><input class="field" id="url" name="url" type="text" value="" />'. '</p>'. '</label>'. '</div>',
         ),
     );
  

@@ -85,7 +85,7 @@ get_header();
 										<?php the_content(); ?>
 									</div><!--/video_embed-->
 									<a href=""><?php the_title(); ?></a>
-									<span><?php _e( 'Added ', 'cwp' ); echo get_the_date( 'F d, Y' ); ?></span>
+									<span><?php _e( 'Added ', 'music-band-lite' ); echo get_the_date( 'F d, Y' ); ?></span>
 								</div><!--/video-->
 								
 							<?php

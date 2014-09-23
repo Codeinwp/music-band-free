@@ -1,16 +1,15 @@
 /*
-Theme Name: Music Band Lite
-Theme URI: http://themeisle.com/themes/music-band-lite/?utm_source=music-band-lite&utm_medium=link&utm_campaign=theme-css-theme-url
-Author: themeisle
-Author URI: http://themeisle.com/?utm_source=music-band-lite&utm_medium=link&utm_campaign=theme-css-author-url
-Description: Music Band Lite is a easily customizable WordPress Theme with an elegant design for your band.
-Version: 1.0
-License: GNU General Public License v2
-License URI: license.txt
-Text Domain: cwp
-Domain Path: /languages/
+Theme Name: Music Band Lite
+Theme URI: http://themeisle.com/themes/music-band-lite/
+Author: codeinwp
+Author URI: Codeinwp.com
+Description: Music Band Lite is a easily customizable WordPress Theme with an elegant design for your band.
+Version: 1.1
+License: GNU General Public License v3.0License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: music-band-lite
+Domain Path: /languages/
 Tags: purple, pink, gray, white, two-columns, custom-background, custom-header, right-sidebar, responsive-layout, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready
-
+Music Band Lite is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 */
 /* Reset */html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;} input, textarea, img { outline: none; border:none;-webkit-appearance: none;border-radius: 0; }article, aside, figure, footer, header, hgroup, nav, section, time {display: block;}a {text-decoration: none;color: inherit;}.clearfix { clear: both; }
 

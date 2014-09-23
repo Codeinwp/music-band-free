@@ -117,7 +117,7 @@ get_header();
 		?>
 			<div class="pagetitle pagetitlemobile" style="margin-top: -55px;">
 				<div class="pagetitlecenter">
-					<h3><?php _e( 'Band MEMBERS', 'cwp' ); ?></h3>
+					<h3><?php _e( 'Band MEMBERS', 'music-band-lite' ); ?></h3>
 				</div>
 			</div>
 			<div id="bandmembers">

@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package cwp
+ * @package music-band-lite
  */
 
 get_header(); ?>
@@ -75,12 +75,6 @@ get_header(); ?>
 					?>
 						<div class="about_banner">
 							<img src="<?php echo $url; ?>" alt="<?php bloginfo( 'name' ); ?>" >
-							
-							<?php 
-								$caption = get_post_meta( $id, 'cpi_caption_option' );
-								if ( isset( $caption[0] ) && $caption[0] != '' ) {
-									echo '<div class="year">' . $caption[0] . '</div>';								}
-							?>
 						</div>
 					<?php
 						}

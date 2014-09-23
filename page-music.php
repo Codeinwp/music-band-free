@@ -92,7 +92,7 @@ get_header();
 						<a href="" class="title"><?php the_title(); ?></a>
 						<?php the_content(); ?>
 						<div class="tracklist">
-							<div class="title"><?php _e( 'TRACK LIST','cwp'); ?></div>
+							<div class="title"><?php _e( 'TRACK LIST','music-band-lite'); ?></div>
 							<?php 
 								$song_counter = 1;
 								$song_title1 = get_post_meta( $id, 'cpi_song1_option');
@@ -199,7 +199,7 @@ get_header();
 											if( isset( $song_time3[0]) && $song_time3[0] != '')
 												echo '<div class="time">' . $song_time3[0] . '</div>';
 											if( isset( $song_link3[0]) && $song_link3[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link3[0] . '">'												. __( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link3[0] . '">'												. __( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -214,7 +214,7 @@ get_header();
 											if( isset( $song_time4[0]) && $song_time4[0] != '')
 												echo '<div class="time">' . $song_time4[0] . '</div>';
 											if( isset( $song_link4[0]) && $song_link4[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link4[0] . '">'												. __( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link4[0] . '">'												. __( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -229,7 +229,7 @@ get_header();
 											if( isset( $song_time5[0]) && $song_time5[0] != '')
 												echo '<div class="time">' . $song_time5[0] . '</div>';
 											if( isset( $song_link5[0]) && $song_link5[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link5[0] . '">'												. __( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link5[0] . '">'												. __( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -244,7 +244,7 @@ get_header();
 											if( isset( $song_time6[0]) && $song_time6[0] != '')
 												echo '<div class="time">' . $song_time6[0] . '</div>';
 											if( isset( $song_link6[0]) && $song_link6[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link6[0] . '">'												. __( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link6[0] . '">'												. __( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -259,7 +259,7 @@ get_header();
 											if( isset( $song_time7[0]) && $song_time7[0] != '')
 												echo '<div class="time">' . $song_time7[0] . '</div>';
 											if( isset( $song_link7[0]) && $song_link7[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link7[0] . '">'.__( 'Lyrics','cwp').'</a></div>';
+												echo '<div class="lyrics"><a href="' . $song_link7[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';
 										?>
 									</div>
 								<?php
@@ -274,7 +274,7 @@ get_header();
 											if( isset( $song_time8[0]) && $song_time8[0] != '')
 												echo '<div class="time">' . $song_time8[0] . '</div>';
 											if( isset( $song_link8[0]) && $song_link8[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link8[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link8[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -289,7 +289,7 @@ get_header();
 											if( isset( $song_time9[0]) && $song_time9[0] != '')
 												echo '<div class="time">' . $song_time9[0] . '</div>';
 											if( isset( $song_link9[0]) && $song_link9[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link9[0] . '">'.__( 'Lyrics','cwp').'</a></div>';
+												echo '<div class="lyrics"><a href="' . $song_link9[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';
 										?>
 									</div>
 								<?php
@@ -304,7 +304,7 @@ get_header();
 											if( isset( $song_time10[0]) && $song_time10[0] != '')
 												echo '<div class="time">' . $song_time10[0] . '</div>';
 											if( isset( $song_link10[0]) && $song_link10[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link10[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link10[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -319,7 +319,7 @@ get_header();
 											if( isset( $song_time11[0]) && $song_time11[0] != '')
 												echo '<div class="time">' . $song_time11[0] . '</div>';
 											if( isset( $song_link11[0]) && $song_link11[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link11[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link11[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -334,7 +334,7 @@ get_header();
 											if( isset( $song_time12[0]) && $song_time12[0] != '')
 												echo '<div class="time">' . $song_time12[0] . '</div>';
 											if( isset( $song_link12[0]) && $song_link12[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link12[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link12[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -349,7 +349,7 @@ get_header();
 											if( isset( $song_time13[0]) && $song_time13[0] != '')
 												echo '<div class="time">' . $song_time13[0] . '</div>';
 											if( isset( $song_link13[0]) && $song_link13[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link13[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link13[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -364,7 +364,7 @@ get_header();
 											if( isset( $song_time14[0]) && $song_time14[0] != '')
 												echo '<div class="time">' . $song_time14[0] . '</div>';
 											if( isset( $song_link14[0]) && $song_link14[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link14[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link14[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -379,7 +379,7 @@ get_header();
 											if( isset( $song_time15[0]) && $song_time15[0] != '')
 												echo '<div class="time">' . $song_time15[0] . '</div>';
 											if( isset( $song_link15[0]) && $song_link15[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link15[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link15[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -394,7 +394,7 @@ get_header();
 											if( isset( $song_time16[0]) && $song_time16[0] != '')
 												echo '<div class="time">' . $song_time16[0] . '</div>';
 											if( isset( $song_link16[0]) && $song_link16[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link16[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link16[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -409,7 +409,7 @@ get_header();
 											if( isset( $song_time17[0]) && $song_time17[0] != '')
 												echo '<div class="time">' . $song_time17[0] . '</div>';
 											if( isset( $song_link17[0]) && $song_link17[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link17[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link17[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -424,7 +424,7 @@ get_header();
 											if( isset( $song_time18[0]) && $song_time18[0] != '')
 												echo '<div class="time">' . $song_time18[0] . '</div>';
 											if( isset( $song_link18[0]) && $song_link18[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link18[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link18[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -439,7 +439,7 @@ get_header();
 											if( isset( $song_time19[0]) && $song_time19[0] != '')
 												echo '<div class="time">' . $song_time19[0] . '</div>';
 											if( isset( $song_link19[0]) && $song_link19[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link19[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link19[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
@@ -454,7 +454,7 @@ get_header();
 											if( isset( $song_time20[0]) && $song_time20[0] != '')
 												echo '<div class="time">' . $song_time20[0] . '</div>';
 											if( isset( $song_link20[0]) && $song_link20[0] != '')	
-												echo '<div class="lyrics"><a href="' . $song_link20[0] . '">'.__( 'Lyrics','cwp').'</a></div>';	
+												echo '<div class="lyrics"><a href="' . $song_link20[0] . '">'.__( 'Lyrics','music-band-lite').'</a></div>';	
 										?>
 									</div>
 								<?php
