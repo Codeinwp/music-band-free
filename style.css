@@ -1596,7 +1596,7 @@ aside#sidebar .widget_calendar table tbody tr td:first-of-type { border-left: no
 footer .menu { float: right;}
 footer .menu ul li { list-style: none; }
 /* End Footer Menu */
-
+#no-subheader {	width: 100%;	overflow: hidden;}
 
 @media only screen and (max-width: 320px) {
 	#logo {
@@ -2156,7 +2156,7 @@ footer .menu ul li { list-style: none; }
 	}
 }	
 
-#no-logo {	float: left;	font-family: "Nyala", sans-serif;	color: #9793b1;
+#no-logo {	float: left;	font-family: "Nyala", sans-serif;	color: #9793b1;	padding:15px;
 }.site-title {	font-size:35px;}.site-description {	font-size:20px;
 }
 table {

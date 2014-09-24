@@ -24,7 +24,7 @@ get_header(); ?>
 							<?php								/* date */								echo get_the_date( 'F j, Y' ).' &#8226; ';								/* author */								echo '<a href="'.get_author_posts_url( get_the_author_meta( 'ID' )).'">'.get_the_author().'</a> &#8226; ';								/* comments */								comments_number( __( 'No Comments', 'music-band-lite' ), __( 'one Comment', 'music-band-lite' ), 									'% '.__( 'Comments', 'music-band-lite' ) );								echo ' &#8226; ';								/* categories */									$cat = get_the_category();								if ( !empty( $cat )) :										foreach( $cat as $cat_item ):											echo '<a href="'.get_category_link( $cat_item->cat_ID ).'">' 												. $cat_item  ->cat_name.'</a> &#8226; ';										endforeach;								endif;								if ( has_tag()):									the_tags();									echo ' &#8226; ';								endif;							?>
 						</div>
 					</div><!--/topdetails-->
-					<div class="readmore"><a href="<?php the_permalink(); ?>"><?php _e( 'Read More', 'music-band-lite' ); ?></a></div>
+					
 					<div class="clearfix"></div>
 					<?php 
 						if ( get_theme_mod( 'fi_index' )):
@@ -37,7 +37,7 @@ get_header(); ?>
 						}						
 					?>
 					<article>
-						<?php the_excerpt(); ?>
+						<?php the_excerpt(); ?>						<div class="readmore"><a href="<?php the_permalink(); ?>"><?php _e( 'Read More', 'music-band-lite' ); ?></a></div>						<div class="clearfix"></div>
 					</article>
 				</div><!--/post-->
 				<?php endwhile; ?>
