@@ -12,19 +12,11 @@
  */
 
 get_header(); ?>
-		<?php
-			$slider_index = cwp( 'slider_index' );
-			if (isset( $slider_index ) && $slider_index == 'show' ) {
-				get_template_part( '/inc/slider' );
-			}
-		?>
-
 		<div class="pagetitle">
 			<div class="pagetitlecenter">
 				<h3><?php _e( 'Latest News','music-band-lite' ); ?></h3>
 			</div><!--/pagetitlecenter-->
 		</div><!--/pagetitle-->
-		
 		<!--Content Start-->
 		<div id="wraper">
 			<section id="content">
@@ -40,15 +32,11 @@ get_header(); ?>
 					</div><!--/topdetails-->
 					
 					<div class="clearfix"></div>
-					<?php 
-						$fi_index = cwp( 'fi_index' );
-						if ($fi_index == 'show' ) {
+					<?php 
 							if ( has_post_thumbnail() ) {
 								echo '<figure>' . get_the_post_thumbnail() . '</figure>';
-							}
-						}						
-					?>
-					
+							}
+					?>
 					<article>
 						<?php the_excerpt(); ?>						<div class="readmore"><a href="<?php the_permalink(); ?>">							<?php _e( 'Read More','music-band-lite' ); ?></a>						</div>						<div class="clearfix"></div>
 					</article>										

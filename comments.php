@@ -13,7 +13,7 @@ if ( post_password_required() )
 	<?php if ( have_comments() ) : ?>
         <div class="comments_headline"><?php comments_number( 'No Comments', 'Comments (1)', 'Comments(%)' ); ?></div>
 			<?php
-				wp_list_comments( 'callback=cwp_comment' );
+				wp_list_comments( 'callback=music_band_lite_comment' );
 			?>
 		<div class="navigation">
 			<?php 

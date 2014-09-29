@@ -70,13 +70,8 @@ get_header(); ?>
 					
 					<div class="clearfix"></div>
 					<?php 
-						if ( get_theme_mod('fi_index') ) :
-							$fi_index = get_theme_mod('fi_index');
-						endif;	
-						if ( (isset($fi_index) && $fi_index == 'show') || (!isset($fi_index)) ) {
-							if ( has_post_thumbnail() ) {
-								echo '<figure>' . get_the_post_thumbnail() . '</figure>';
-							}
+						if ( has_post_thumbnail() ) {
+							echo '<figure>' . get_the_post_thumbnail() . '</figure>';
 						}
 					?>
 					<article>

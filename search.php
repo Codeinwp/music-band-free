@@ -26,14 +26,10 @@ get_header(); ?>
 					</div><!--/topdetails-->
 					
 					<div class="clearfix"></div>
-					<?php 
-						if ( get_theme_mod( 'fi_index' )):
-							$fi_index = get_theme_mod( 'fi_index' );
-						endif;	
-						if ( ( isset( $fi_index ) && $fi_index == 'show' ) || ( ! isset( $fi_index )) ){
-							if ( has_post_thumbnail()) {
-								echo '<figure>'.get_the_post_thumbnail().'</figure>';
-							}
+					<?php
+				
+						if ( has_post_thumbnail()) {
+							echo '<figure>'.get_the_post_thumbnail().'</figure>';
 						}						
 					?>
 					<article>
@@ -51,5 +47,4 @@ get_header(); ?>
 			</aside><!--/sidebar-->
 			<div class="clearfix"></div>
 		</div><!--/wraper-->
-	<?php get_template_part( '/inc/footer-section' ); ?>
 <?php get_footer(); ?>

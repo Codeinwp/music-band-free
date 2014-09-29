@@ -53,7 +53,7 @@ function cwp_content_nav( $nav_id ) {
 	<?php
 }
 
-function cwp_comment( $comment, $args, $depth ) {
+function music_band_lite_comment( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
   
 		if ( 'div' == $args['style'] ) {

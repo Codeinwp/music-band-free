@@ -4,7 +4,7 @@ Theme URI: http://themeisle.com/themes/music-band-lite/
 Author: codeinwp
 Author URI: Codeinwp.com
 Description: Music Band Lite is a easily customizable WordPress Theme with an elegant design for your band.
-Version: 1.1
+Version: 1.2
 License: GNU General Public License v3.0License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: music-band-lite
 Domain Path: /languages/
@@ -71,7 +71,7 @@ body {
 	font-size: 13px;
 	-ms-word-wrap: break-word;
     word-wrap: break-word;
-
+	
 }
 img {max-width:100%;height:auto;}
 
@@ -157,7 +157,7 @@ h6 {
 	float: left;
 	margin-right: 26px;
 }
-
+#content figure {	float:left;	padding:10px 10px 10px 0px;	width: 100%;	height: auto;}.home #content article p{	padding-top:10px;	color:#5e5e5e;}
 #content input {
 	border:1px solid #ddd;
 }
@@ -388,17 +388,14 @@ header .buyalbum a { display: block; }
 
 /* 2 - News Stlye */
 .post {
-	width: 620px;
 	height: auto;
 	padding-bottom: 25px;
-	margin: 17px 0px 17px 40px;
 	border-bottom: 1px dotted #a0a0a0;
 }
 
 .post:last-of-type { border-bottom: none; }
 
 .post .topdetails {
-	width: 517px;
 	min-height: 38px;
 	float: left;
 }
@@ -424,7 +421,7 @@ header .buyalbum a { display: block; }
 	width: 95px;
 	height: 40px;
 	float: right;
-	background: #c46e67;
+	background: #c46e67;	margin: 10px 0px 10px 10px;
 }
 
 .post .readmore:hover { background-color: #97534e; }
@@ -886,7 +883,7 @@ header .buyalbum a { display: block; }
 footer {
 	width: 100%;
 	height: auto;
-	background: #c46e67;
+	background: #c46e67;	min-height: 100px;
 }
 
 .footercenter {
@@ -899,36 +896,24 @@ footer {
 }
 
 .footercenter .copyright {
-	width: 400px;
 	float: left;
-	margin-left: 43px;
+	color: #fff;		font-size: 15px;		line-height: 20px;		margin-top: 25px;
 }
 
-.footercenter .fnav {
-	max-width: 468px;
-	margin-right: 43px;
-	float: right;
+#footer_nav {
+	float: right;	margin-top: 25px;
+}
+#footer_nav ul li {	float:left;	list-style:none;	line-height:25px;}
+#footer_nav ul li a {
+	line-height: 5px;
+	font-size: 15px;
+	color: #fff;
+	border-right: 1px solid #fff;
+	margin-top: 25px;
+	padding: 0px 10px;
 }
 
-.footercenter .fnav a {
-	height: 12px;
-	line-height: 12px;
-	font-size: 12px;
-	color: #2a2443;
-	border-right: 1px solid #2a2443;
-	float: left;
-	margin-top: 34px;
-	padding: 0px 13px;
-}
-
-.footercenter .fnav a:hover { color: #fff; }
-
-.footercenter .fnav .powered { 
-	width: 133px;
-	float: left;
-	padding-left: 13px; 
-}
-
+#footer_nav ul li a:hover { color: #2a2443; }
 /* 3 - Media Style */
 
 .media_bg {
@@ -1213,7 +1198,7 @@ footer {
 	width: 100%;
 	height: 1px;
 	border-top: 1px solid #e2c4c0;
-	margin-top: 10px;
+	margin-top: 10px;	clear:both;
 }
 
 .about_content {
@@ -1470,12 +1455,12 @@ pre {
 
 .pagination {
 	padding-bottom: 25px;
-	margin: 17px 0px 17px 40px;
+	margin: 17px 0px 17px 0px;
 }
 
 .next, .prev {
 	color:#bb6053;
-	text-transform: uppercase;
+	text-transform: uppercase;		font-weight: bold;	font-size: 15px;
 }
 
 .next {
