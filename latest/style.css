@@ -1,16 +1,15 @@
 /*
-Theme Name: Music Band Lite
-Theme URI: http://themeisle.com/themes/music-band-lite/
-Author: Codeinwp
-Author URI: www.codeinwp.com
-Description: Music Band Lite is a easily customizable WordPress Theme with an elegant design for your band.
-Version: 1.1
-License: GNU General Public License v2
-License URI: license.txt
-Text Domain: cwp
-Domain Path: /languages/
+Theme Name: Music Band Lite
+Theme URI: http://themeisle.com/themes/music-band-lite/
+Author: codeinwp
+Author URI: Codeinwp.com
+Description: Music Band Lite is a easily customizable WordPress Theme with an elegant design for your band.
+Version: 1.2
+License: GNU General Public License v3.0License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: music-band-lite
+Domain Path: /languages/
 Tags: purple, pink, gray, white, two-columns, custom-background, custom-header, right-sidebar, responsive-layout, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready
-
+Music Band Lite is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 */
 /* Reset */html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;} input, textarea, img { outline: none; border:none;-webkit-appearance: none;border-radius: 0; }article, aside, figure, footer, header, hgroup, nav, section, time {display: block;}a {text-decoration: none;color: inherit;}.clearfix { clear: both; }
 
@@ -72,7 +71,7 @@ body {
 	font-size: 13px;
 	-ms-word-wrap: break-word;
     word-wrap: break-word;
-
+	
 }
 img {max-width:100%;height:auto;}
 
@@ -158,7 +157,7 @@ h6 {
 	float: left;
 	margin-right: 26px;
 }
-
+#content figure {	float:left;	padding:10px 10px 10px 0px;	width: 100%;	height: auto;}.home #content article p{	padding-top:10px;	color:#5e5e5e;}
 #content input {
 	border:1px solid #ddd;
 }
@@ -180,7 +179,6 @@ h6 {
 
 header {
 	width: 100%;
-	border-bottom: 1px solid #e2c4c0;
 	margin-bottom: 9px;
 	min-height: 80px;
 }
@@ -390,17 +388,14 @@ header .buyalbum a { display: block; }
 
 /* 2 - News Stlye */
 .post {
-	width: 620px;
 	height: auto;
 	padding-bottom: 25px;
-	margin: 17px 0px 17px 40px;
 	border-bottom: 1px dotted #a0a0a0;
 }
 
 .post:last-of-type { border-bottom: none; }
 
 .post .topdetails {
-	width: 517px;
 	min-height: 38px;
 	float: left;
 }
@@ -426,7 +421,7 @@ header .buyalbum a { display: block; }
 	width: 95px;
 	height: 40px;
 	float: right;
-	background: #c46e67;
+	background: #c46e67;	margin: 10px 0px 10px 10px;
 }
 
 .post .readmore:hover { background-color: #97534e; }
@@ -888,7 +883,7 @@ header .buyalbum a { display: block; }
 footer {
 	width: 100%;
 	height: auto;
-	background: #c46e67;
+	background: #c46e67;	min-height: 100px;
 }
 
 .footercenter {
@@ -901,36 +896,24 @@ footer {
 }
 
 .footercenter .copyright {
-	width: 400px;
 	float: left;
-	margin-left: 43px;
+	color: #fff;		font-size: 15px;		line-height: 20px;		margin-top: 25px;
 }
 
-.footercenter .fnav {
-	max-width: 468px;
-	margin-right: 43px;
-	float: right;
+#footer_nav {
+	float: right;	margin-top: 25px;
+}
+#footer_nav ul li {	float:left;	list-style:none;	line-height:25px;}
+#footer_nav ul li a {
+	line-height: 5px;
+	font-size: 15px;
+	color: #fff;
+	border-right: 1px solid #fff;
+	margin-top: 25px;
+	padding: 0px 10px;
 }
 
-.footercenter .fnav a {
-	height: 12px;
-	line-height: 12px;
-	font-size: 12px;
-	color: #2a2443;
-	border-right: 1px solid #2a2443;
-	float: left;
-	margin-top: 34px;
-	padding: 0px 13px;
-}
-
-.footercenter .fnav a:hover { color: #fff; }
-
-.footercenter .fnav .powered { 
-	width: 133px;
-	float: left;
-	padding-left: 13px; 
-}
-
+#footer_nav ul li a:hover { color: #2a2443; }
 /* 3 - Media Style */
 
 .media_bg {
@@ -1215,7 +1198,7 @@ footer {
 	width: 100%;
 	height: 1px;
 	border-top: 1px solid #e2c4c0;
-	margin-top: 10px;
+	margin-top: 10px;	clear:both;
 }
 
 .about_content {
@@ -1472,12 +1455,12 @@ pre {
 
 .pagination {
 	padding-bottom: 25px;
-	margin: 17px 0px 17px 40px;
+	margin: 17px 0px 17px 0px;
 }
 
 .next, .prev {
 	color:#bb6053;
-	text-transform: uppercase;
+	text-transform: uppercase;		font-weight: bold;	font-size: 15px;
 }
 
 .next {
@@ -1598,7 +1581,7 @@ aside#sidebar .widget_calendar table tbody tr td:first-of-type { border-left: no
 footer .menu { float: right;}
 footer .menu ul li { list-style: none; }
 /* End Footer Menu */
-
+#no-subheader {	width: 100%;	overflow: hidden;}
 
 @media only screen and (max-width: 320px) {
 	#logo {
@@ -2158,7 +2141,7 @@ footer .menu ul li { list-style: none; }
 	}
 }	
 
-#no-logo {	float: left;	font-family: "Nyala", sans-serif;	color: #9793b1;
+#no-logo {	float: left;	font-family: "Nyala", sans-serif;	color: #9793b1;	padding:15px;
 }.site-title {	font-size:35px;}.site-description {	font-size:20px;
 }
 table {
