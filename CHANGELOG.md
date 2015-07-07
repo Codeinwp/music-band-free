@@ -1,5 +1,13 @@
 
 
+### 1.3 - 07/07/2015
+
+ Changes: 
+
+
+ * Replaced non gpl images
+
+
 ### 1.2 - 17/10/2014
 
  Changes: 
